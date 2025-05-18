@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context=".AboutUsActivity">
+
+    <!-- BixbyBites Icon -->
+    <ImageView
+        android:id="@+id/bixbybites_icon"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:src="@drawable/icon"
+        android:contentDescription="BixbyBites Icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- BixbyRides Heading -->
+    <TextView
+        android:id="@+id/bixbyrides_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BixbyRides"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/bixbybites_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Menu Icon (on the top right) -->
+    <ImageButton
+        android:id="@+id/menuIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/iconmenu"
+        android:contentDescription="Menu Icon"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- About Us Content (History of BixbyBites) -->
+    <TextView
+        android:id="@+id/about_us_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="BixbyRides is a revolutionary ride-sharing service that began its journey with the vision of making affordable and safe transportation accessible to everyone. Launched in 2023, BixbyRides quickly expanded its presence across South Africa, offering innovative solutions to the transportation challenges faced by many communities. Our mission is to provide not just a ride, but a safe and seamless experience for our users, making their everyday commutes easier and more reliable."
+        android:textSize="16sp"
+        android:lineSpacingExtra="4dp"
+        android:padding="16dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/bixbyrides_heading"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

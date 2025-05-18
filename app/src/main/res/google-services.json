@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "608060808944",
+    "project_id": "bixbyrides",
+    "storage_bucket": "bixbyrides.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:608060808944:android:f9567c1a352b96a947ac35",
+        "android_client_info": {
+          "package_name": "com.example.bixbyrides"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBP9O-MDJblqKjEDLJ-HbRffnCevhqj1n0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

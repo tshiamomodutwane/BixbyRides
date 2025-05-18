@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!-- Car Logo -->
+    <ImageView
+        android:id="@+id/carImage"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:src="@drawable/icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <ImageButton
+        android:id="@+id/menuIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/iconmenu"
+        android:contentDescription="Menu Icon" />
+
+    <!-- Bixby Label -->
+    <TextView
+        android:id="@+id/bixbyLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bixby"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:layout_below="@id/carImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Spinner for Ride Types -->
+    <Spinner
+        android:id="@+id/rideTypeSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bixbyLabel"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_rectangle_background"
+        android:padding="12dp"
+        android:popupBackground="#FFFFFF" />
+
+    <!-- Button for selecting Ride -->
+    <Button
+        android:id="@+id/selectRideButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Ride"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#1E3A8A"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rideTypeSpinner"
+        android:layout_marginTop="32dp"/>
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000">
+
+    <!--Car Logo -->
+    <ImageView
+        android:id="@+id/carImage"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/icon" />
+
+    <!-- Menu Icon -->
+    <ImageButton
+        android:id="@+id/menuIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/iconmenu"
+        android:contentDescription="Menu Icon" />
+
+    <!--Map WebView -->
+    <WebView
+        android:id="@+id/mapWebView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/carImage"
+        android:layout_marginTop="16dp" />
+
+    <!-- Share Location Button -->
+    <Button
+        android:id="@+id/shareLocationButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Share location"
+        android:layout_below="@id/mapWebView"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#1E3A8A"
+        android:textColor="#FFFFFF" />
+</RelativeLayout>

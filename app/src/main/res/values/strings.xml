@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">BixbyRides</string>
+    <string name="wallpaper">Welcome background image</string>
+    <string-array name="ride_types">
+        <item>BixbyStandard</item>
+        <item>BixbyPremium</item>
+        <item>BixbyLuxury</item>
+    </string-array>
+
+</resources>
